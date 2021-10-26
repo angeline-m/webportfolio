@@ -467,6 +467,10 @@ section {
 # Skills
 --------------------------------------------------------------*/
 
+.skills-box {
+    margin-top: 2rem;
+}
+
 .skill-title {
     display: flex;
     align-items: top;
@@ -483,57 +487,6 @@ section {
 .skills .description {
     margin-bottom: 24px;
 }
-
-/* .skills .icon-box {
-    margin-bottom: 20px;
-}
-
-.skills .icon {
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 54px;
-    height: 54px;
-    background: #b897cf;
-    border-radius: 50%;
-    transition: 0.5s;
-    border: 1px solid #b897cf;
-}
-
-.skills .icon i {
-    color: #fff;
-    font-size: 24px;
-}
-
-.skills .icon-box:hover .icon {
-    background: #fff;
-}
-
-.skills .icon-box:hover .icon i {
-    color: #b897cf;
-}
-
-.skills .title {
-    margin-left: 80px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
-.skills .title a {
-    color: #343a40;
-}
-
-.skills .title a:hover {
-    color: #b897cf;
-}
-
-.skills .description {
-    margin-left: 80px;
-    line-height: 24px;
-    font-size: 14px;
-} */
 
 /*--------------------------------------------------------------
 # Contact
