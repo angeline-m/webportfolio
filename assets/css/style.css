@@ -725,60 +725,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-    padding: 20px 0;
-    background: #f9f9f9;
-}
-
-.breadcrumbs h2 {
-    font-size: 26px;
-    font-weight: 300;
-}
-
-.breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-}
-
-.breadcrumbs ol li + li {
-    padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #0e2442;
-    content: "/";
-}
-
-@media (max-width: 768px) {
-    .breadcrumbs .d-flex {
-        display: block !important;
-    }
-
-    .breadcrumbs ol {
-        display: block;
-    }
-
-    .breadcrumbs ol li {
-        display: inline-block;
-    }
-
-    .portfolio-info > p {
-        display: none;
-    }
-}
-
-/*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
     padding-top: 40px;
 }
 
@@ -810,51 +759,9 @@ section {
     background-color: #b897cf !important;
 }
 
-/*
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  position: absolute;
-  right: 0;
-  bottom: 340px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 50px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  width: 50%;
-  font-size: 26px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-*/
 
 .portfolio .portfolio-wrap::before {
     content: "";
@@ -972,6 +879,121 @@ section {
         position: static;
         margin-top: 30px;
     }
+} */
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+.card-proj {
+    margin-bottom: 2rem;
+    border: none;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    display: flex;
+    flex-flow: column;
+    height: 450px;
+  }
+
+.card-proj .card-body {
+  position: relative;
+}
+
+.card-desc {
+    flex: 1;
+    overflow: auto;
+}
+
+.card-proj .card-category-box {
+  position: absolute;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.card-proj .card-category {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 2px;
+  overflow: hidden;
+  background-color: #c8a9df;
+  border-radius: 4px;
+}
+.card-proj .card-category .category {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+}
+
+.card-img {
+    height: 250px;
+    overflow: hidden;
+    opacity: 0.75;
+    -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(30%);
+    transition: 0.5s;
+}
+
+.card-img:hover {
+    opacity: 100%;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.card-proj h3 {
+    font-size: 30px;
+    color: #575456;
+    font-weight: 700;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.card-proj p {
+    color: #7b7b7b;
+    margin-bottom: 0;
+}
+
+.two-links {
+    opacity: 1;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 45px;
+}
+
+.two-links a {
+    text-align: center;
+    transition: 0.3s;
+    width: 50%;
+    margin: 0 !important;
+    background: #c8a9df;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 8px;
+}
+
+.two-links a + a {
+    border-left: 1px solid #fff;
+}
+
+.two-links a:hover {
+    background: rgba(167, 135, 196, 0.9);
+    color: #ddd;
+}
+
+.two-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-links a span {
+    margin-left: 5px;
 }
 
 /*--------------------------------------------------------------
