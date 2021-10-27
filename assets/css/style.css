@@ -723,7 +723,7 @@ section {
   padding: 0 15px 2px;
   overflow: hidden;
   background-color: #c8a9df;
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 .card-proj .card-category .category {
   color: #fff;
