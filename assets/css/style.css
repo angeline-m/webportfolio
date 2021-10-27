@@ -238,14 +238,14 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/Hero-Background.jpg") top center;
+    background: url("../img/Hero-Bg.jpg") top center;
     background-size: cover;
     /* text-align: center; */
 }
 
 #hero:before {
     content: "";
-    background: rgba(5, 13, 24, 0.3);
+    /* background: rgba(5, 13, 24, 0.3); */
     position: absolute;
     bottom: 0;
     top: 0;
@@ -474,7 +474,7 @@ section {
 --------------------------------------------------------------*/
 
 .skills-box {
-    margin-top: 2rem;
+    margin-top: 2.2rem;
 }
 
 .skill-title {
